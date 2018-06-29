@@ -1,0 +1,11 @@
+<view class='container'>
+  <navigator wx:for="{{list}}" class='list-box' url="../list/list?id={{item.id}}&title={{item.name}}">
+    <image class='list-img' src='{{item.thumbnail}}'></image>
+    <view>
+      <text class='list-name'>{{item.name}}</text>
+    </view>
+    <view>
+      <text class='list-description'>{{item.description}}</text>      
+    </view>
+  </navigator>
+</view>

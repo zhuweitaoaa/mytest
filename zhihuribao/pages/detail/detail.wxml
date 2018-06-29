@@ -1,0 +1,15 @@
+<!--detail.wxml-->
+<import src="../../wxParse/wxParse.wxml"/>
+
+
+<view class="container">
+    <view class="art-header" wx:if="{{art.image_source}}">
+        <image src="{{art.image}}" class="art-img"/>
+        <view class="art-title">{{art.title}}</view>
+        <view class="art-source">{{art.image_source}}</view>
+    </view>
+
+    <view class="art-content">
+      <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+    </view> 
+</view>

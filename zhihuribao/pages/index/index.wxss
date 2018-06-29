@@ -1,0 +1,69 @@
+.bannerBox{
+  width: 100%;
+  height: 600rpx;
+}
+.bannerBox image{
+  width: 100%;
+  display: block;
+}
+.banner{
+  position: relative;
+}
+.bannerTxt{
+  position: absolute;
+  bottom: 0;
+  font-size: 28rpx;
+  color: #fff;
+  background: rgba(0, 0, 0, .6);
+  width: 100%;
+  height: 66rpx;
+  line-height: 66rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 10rpx;
+}
+.conBigBox{
+  background: #f2f2f2;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 10rpx;
+}
+.listTit{
+  width: 100%;
+  height: 66rpx;
+  line-height: 66rpx;
+  padding: 0 16px;
+  font-size: 28rpx;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: #76787e;
+}
+.list-box{
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 8px;
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 8px;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-bottom: 1px solid #d0d0d0;
+  border-radius: 5px;
+}
+.list-right{
+  width: 160rpx;
+  height: 160rpx;
+}
+.list-image{
+  width: 160rpx;
+  height: 160rpx;
+}
+.load-btn{
+  margin: 20rpx 0 0 20rpx;
+}

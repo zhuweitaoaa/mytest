@@ -1,0 +1,19 @@
+<view class='container'>
+  <swiper class='bannerBox' circular>
+    <swiper-item wx:for="{{banner}}" class="banner">
+      <image src='{{item.image}}' mode='widthFix'></image>
+      <view class='bannerTxt'>{{item.title}}</view>
+    </swiper-item>
+  </swiper>
+
+  <view class='conBigBox'>
+    <block wx:for="{{list}}">
+      <text wx:if="{{item.header}}" class='listTit'>{{item.header}}</text>
+      <navigator wx:else class='list-box' url="../detail/detail?id={{item.id}}">
+        <text class='list-txt'>{{item.title}}</text>
+        <view class='list-right'><image class='list-image' src='{{item.images}}'></image></view>
+      </navigator>
+    </block>
+    <button type="primary" class="load-btn" size="mini" loading="{{loading}}" plain="{{plain}}" bindtap="loadMore"> 更多 </button>
+  </view>
+</view>
